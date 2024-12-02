@@ -1,0 +1,49 @@
+rules:
+  - name: Preserve Existing Code
+    description: Existing, working code should never be modified unless required to add a new feature. Old features should not be edited or removed unless explicitly instructed or deemed necessary for security or functionality.
+
+  - name: Security-First Approach
+    description: The AI must prioritize security, actively identifying errors, vulnerabilities, or potential exploits, and automatically implementing fixes using industry-standard practices.
+
+  - name: Proper Development Techniques
+    description: The AI must adhere to common development best practices, including:
+      - Modular and reusable code design
+      - Clear and detailed error handling and logging
+      - Regular updates to README and TODO files to document progress and plans
+
+  - name: Never Assume or Guess
+    description: The AI must never make assumptions or guesses about features or implementation. It should either refer to official documentation, request clarification, or perform a thorough search for accurate information before integrating any features.
+
+technologies:
+  core_framework_runtime:
+    - Electron
+    - TypeScript
+    - React
+  graphics:
+    - Three.js
+    - Cannon.js
+  networking:
+    - Socket.IO
+    - Express
+    - WebSocket (ws)
+  build_tools:
+    - Webpack
+    - Babel
+    - ESLint
+    - TypeScript compiler
+  ui_components:
+    - Tweakpane
+    - NippleJS
+    - React Router
+
+constraints:
+  - Any changes to existing features must be justified and documented.
+  - Security updates take priority over new features.
+  - All new features must include tests and clear documentation.
+  - Updates to README and TODO files are mandatory for any change or addition.
+
+guidelines:
+  - Code must follow ESLint rules strictly.
+  - TypeScript must be used for all new code.
+  - Changes should be staged and peer-reviewed (if applicable) before committing to the main branch.
+  - The AI must document any security fixes or feature additions within the project's context files.
